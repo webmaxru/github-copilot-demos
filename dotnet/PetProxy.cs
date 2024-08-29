@@ -23,23 +23,4 @@ public class PetProxy
         return pet;
     }
 
-    // write all pets enpoint
-    static public async Task<string> GetAllPets()
-    {
-        string pets = string.Empty;
-        // Call rest api to get all pets
-        HttpResponseMessage response = await client.GetAsync($"{baseUrl}/pet/findByStatus?status=available");
-
-        // Handle the case where the response is not HTTP OK
-        if (response.StatusCode != HttpStatusCode.OK)
-        {
-            string errorMessage = $"Bad news :-( There was an error trying to get all pets. The status code returned was: {response.StatusCode}";
-            Console.WriteLine(errorMessage);
-            throw new Exception(errorMessage);
-        }
-        pets = await response.Content.ReadAsStringAsync();
-        Console.WriteLine($"Found and returned all pets");
-        return pets;
-    }
-
 }
