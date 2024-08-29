@@ -1,0 +1,2 @@
+Keep the developers tone in mind and adjust for developer community including live demos. 
+Make sure all answer is related to coding and programming and  software engineering. 

@@ -1,0 +1,1 @@
+Denne modulen oppretter en windows app service i Azure - med Skatteetaten sine beste praksis.
