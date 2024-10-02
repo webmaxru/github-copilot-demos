@@ -39,31 +39,3 @@
  *         - phone
  *         - avatar
  */
-
-// define class based on swagger spec
-// also add helper class to get full-name of user
-export class Profile {
-	id: string;
-	firstName: string;
-	lastName: string;
-	age: number;
-	email: string;
-	address: string;
-	phone: string;
-	avatar: string;
-
-	constructor(data: Profile) {
-		this.id = data.id;
-		this.firstName = data.firstName;
-		this.lastName = data.lastName;
-		this.age = data.age;
-		this.email = data.email;
-		this.address = data.address;
-		this.phone = data.phone;
-		this.avatar = data.avatar;
-	}
-
-	get fullName(): string {
-		return `${this.firstName} ${this.lastName}`;
-	}
-}
