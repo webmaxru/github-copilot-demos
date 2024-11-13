@@ -1,5 +1,7 @@
 # Copilot Demos
 
+Check out following settings for new features.
+
 ## chat.commandCenter.enabled
 
 ## github.copilot.chat.edits.enabled
